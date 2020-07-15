@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<head>
+<title>Acceso denegado - </title>
+</head>
+<body>
+	<h1>No tiene permisos para acceder a esta pagina!</h1>
+	<form action="/logout" method="post">
+		<input type="submit" value="Sign in as different user" /> <input
+			type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+	</form>
+</body>
+</html>

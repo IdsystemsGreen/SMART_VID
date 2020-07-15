@@ -1,0 +1,288 @@
+<div id="page-wrapper" style="min-height: 90%">
+	<div class="row">
+		<div class="col-lg-6">
+			<h1>Visualizaci&oacute;n de Sensores</h1>
+		</div>
+		<div class="col-md-6">
+		<br></br> 
+        		<strong>Ultima Actualizaci&oacute;n: <span id="fecha"></span> </strong>
+        		<br></br>
+        		<strong>ID de Actualizaci&oacute;n: <span id="frame"></span> </strong>
+		</div>
+	</div>
+		
+	<ul class="nav nav-tabs">
+	  <li class="active"><a data-toggle="tab" href="#datosOnline">Datos Online</a></li>
+	  <li><a data-toggle="tab" href="#atmosferaGraficos">Atm&oacute;sfera</a></li>
+	  <li><a data-toggle="tab" href="#radiacionGraficos">Radiaci&oacute;n</a></li>
+	  <li><a data-toggle="tab" href="#estacionMetGraficos">Estaci&oacute;n Met.</a></li>
+	  <li><a data-toggle="tab" href="#nodoGraficos">Nodo</a></li>
+	 </ul>
+	<br></br>
+	<div class="tab-content">
+    	<div id="datosOnline" class="tab-pane fade in active">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-thermometer-three-quarters fa-4x"></i>
+								</div>
+								<div class="col-xs-9 text-left">
+									<div class="huge">Atm&oacute;sfera</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<p class="text-info">
+								<strong><span id="humedadLbl">Humedad:</span> <span id="humedad"></span></strong> <i id="iHumedadDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong><span id="presionAireLbl">Presi&oacute;n de Aire:</span> <span id="presionAire"></span></strong> <i id="iPresionAireDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong><span id="temperaturaLbl">Temperatura:</span> <span id="temperatura"></span></strong> <i id="iTemperaturaDatos"></i> 
+							</p>
+							<div class="clearfix"></div>							
+						</div>
+		
+					</div>
+				</div>
+		
+				<div class="col-lg-5">
+					<div class="panel panel-yellow">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-sun-o fa-4x"></i>
+								</div>
+								<div class="col-xs-9 text-left">
+									<div class="huge">Radiaci&oacute;n</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<p class="text-info">
+								<strong><span id="radiacionSolarLbl">Radiaci&oacute;n Solar:</span> <span id="radiacionSolar"></span></strong> <i id="iRadiacionSolarDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong><span id="humedadSueloLbl">Humedad del Suelo:</span> <span id="humedadSuelo"></span></strong><i id="iHumedadSueloDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong><span id="intensidadLuminosaLbl">Intensidad Luminosa:</span> <span id="intensidadLuminosa"></span></strong><i id="iIntensidadLuminosaDatos"></i>
+							</p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="panel panel-green">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-bolt fa-4x"></i>
+								</div>
+								<div class="col-xs-9 text-left">
+									<div class="huge">Estaci&oacute;n Met.</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<p class="text-info">
+								<strong><span id="velocidadVientoLbl">Velocidad del Viento:</span> <span id="velocidadViento"></span></strong> <i id="iVelocidadVientoDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong>Direcci&oacute;n del Viento: <span id="direccionViento"></span></strong>
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong><span id="lluviaLbl">Lluvia:</span> <span id="lluvia"></span></strong> <i id="iLluviaDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+						</div>
+		
+					</div>
+				</div>
+		
+				<div class="col-lg-5">
+					<div class="panel panel-red">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-microchip fa-4x"></i>
+								</div>
+								<div class="col-xs-9 text-left">
+									<div class="huge">Nodo</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<p class="text-info">
+								<strong><span id="temperaturaInternaLbl">Temperatura Interna:</span> <span id="temperaturaInterna"></span></strong> <i id="iTemperaturaInternaDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong><span id="nivelBateriaLbl">Nivel de Bateria:</span> <span id="nivelBateria"></span></strong> <i id="iNivelBateriaDatos"></i> 
+							</p>
+							<div class="clearfix"></div>
+							<p class="text-info">
+								<strong> &nbsp;</strong>
+							</p>
+						</div>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="atmosferaGraficos" class="tab-pane fade">
+        	
+        	<div class="row">
+              	<div class="col-sm-4 col-centered ">
+              		<div class="text-center" ><i id="iHumedad"></i><span id="spanHumedad" style="font-size: 30px;">&nbsp;Humedad</span></div>
+              		<div> 
+	        			<div id="jqHumedad" style="width: 300px; height: 300px; margin:0 auto;"></div>
+	    			</div>
+	    			<br></br>
+	    		</div>
+	       		<div class="col-sm-4 col-centered" >	
+	       			<div class="text-center" ><i id="iPresionAire"></i><span id="spanPresionAire" style="font-size: 30px;">&nbsp;Presi&oacute;n de Aire</span></div>
+	        		<div> 
+	        			<div id="jqPresionAire" style="width: 300px; height: 300px; margin:0 auto;">
+	        			</div>
+	        		</div>
+	        		<br></br>
+	        	</div>
+	         	<div class="col-sm-4 col-centered" >	
+	         		<div class="text-center" ><i id="iTemperatura"></i><span id="spanTemperatura" style="font-size: 30px;">&nbsp;Temperatura</span></div>
+              		<div> 
+	        			<div id="jqTemperatura" style="width: 150px; height: 300px; margin:0 auto;">
+	        			</div>
+	        		</div>
+	        		<br></br>
+	        	</div>
+             </div>
+    	</div>
+    	<div id="radiacionGraficos" class="tab-pane fade">
+        	<div class="row">
+              	<div class="col-sm-4 col-centered">
+              		<div class="text-center" ><i id="iRadiacionSolar"></i><span id="spanRadiacionSolar" style="font-size: 30px;">&nbsp;Radiaci&oacute;n Solar</span></div>
+              		<div> 
+	        			<div id="jqRadiacionSolar" style="width: 300px; height: 185px; margin:0 auto;"></div>
+	    			</div>
+	    			<br></br>
+	    		</div>
+	       		<div class="col-sm-4 col-centered">	
+	       			<div class="text-center" ><i id="iHumedadSuelo"></i><span id="spanHumedadSuelo" style="font-size: 30px; text-decoration: blink;">Humedad del Suelo</span></div>
+              		<div> 
+	        			<div id="jqHumedadSuelo" style="width: 300px; height: 300px; margin:0 auto;"></div>
+	    			</div>
+	    			<br></br>
+	       		</div>
+	         	<div class="col-sm-4 col-centered">	
+	         		<div class="text-center" ><i id="iIntensidadLuminosa"></i><span id="spanIntensidadLuminosa" style="font-size: 30px; text-decoration: blink;">Intensidad Luminosa</span></div>
+              		<div>
+        				<div id="jqIntensidadLuminosa" style="width: 80px; height: 300px; margin:0 auto;"></div>
+    				</div>
+	         	</div>
+        	</div>
+    	</div>
+    	<div id="estacionMetGraficos" class="tab-pane fade">
+        	<div class="row">
+        		<div class="col-sm-4 col-centered">	
+	         		<div class="text-center" ><i id="iVelocidadViento"></i><span id="spanVelocidadViento" style="font-size: 30px;">&nbsp;Velocidad del Viento</span></div>
+              		<div> 
+	        			<div id="jqVelocidadViento" style="width: 300px; height: 300px; margin:0 auto;">
+	        			</div>
+	        		</div>
+	        		<br></br>
+	        	</div>
+	        	<div class="col-sm-4 col-centered">	
+	         		<div class="text-center" ><span id="spanVelocidadViento" style="font-size: 30px;">Direcci&oacute;n del Viento</span></div>
+              		<div> 
+	        			<div id="jqRadialGauge" style="width: 300px; height: 300px; margin:0 auto;">
+	        			</div>
+	        		</div>
+	        		<br></br>
+	        	</div>
+	        	<div class="col-sm-4 col-centered">	
+	         		<div class="text-center" ><i id="iLluvia"></i><span id="spanLluvia" style="font-size: 30px;">&nbsp;Lluvia</span></div>
+	         		<div>
+        				<div id="jqLluvia" style="width: 80px; height: 300px; margin:0 auto;"></div>
+    				</div>
+	         	</div>
+        	</div>
+    	</div>
+    	<div id="nodoGraficos" class="tab-pane fade">
+        	<div class="row">
+        		<div class="col-sm-4 col-centered">	
+	         		<div class="text-center" ><i id="iTemperaturaInterna"></i><span id="spanTemperaturaInterna" style="font-size: 30px;">&nbsp;Temperatura Interna</span></div>
+              		<div> 
+	        			<div id="jqTemperaturaInterna" style="width: 150px; height: 300px; margin:0 auto;">
+	        			</div>
+	        		</div>
+	        		<br></br>
+	        	</div>
+        		<div class="col-sm-4 col-centered">	
+	         		<div class="text-center" ><i id="iNivelBateria"></i><span id="spanNivelBateria" style="font-size: 30px;">&nbsp;Nivel de Bateria</span></div>
+              		<div>
+        				<div id="jqNivelBateria" style="width: 80px; height: 300px; margin:0 auto;"></div>
+    				</div>
+	         	</div>
+        	</div>
+    	</div>
+	</div>
+	<div class="row">
+    	<div id="divActualizar" class="col-md-2">  
+        		<button id="btnUpdate" type="button"  class="btn btn-primary btn-md btn-block"><i class="fa fa-play"></i> Actualizar</button>
+		</div>
+	</div>
+	<br></br>
+</div>
+
+  <div class="modal fade" id="alertaModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color : #d9534f;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Alerta de Sensor</h4>
+        </div>
+        <div class="modal-body">
+          <p><strong>Se ha Alcanzado el Limte de <strong><span id="sensorMaxValueLbl"></span></strong> Preestablecido Para el Sensor:</strong> <strong><span id="sensorNombreLbl"></span></strong></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+<script src="js/sensores/sensores.js"></script>
+<script src="js/sensores/graficos.js"></script>
+<script>
+	(function($) {
+		$("#btnUpdate").on('click', function(){
+			getSensorData();
+		});
+		
+		$( document ).ready(function() {
+			getSensorData();
+			runAutomatic();
+		});
+		
+		
+	
+	})(jQuery);
+	 
+</script>
+
+
